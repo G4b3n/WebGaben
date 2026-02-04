@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatika</title>
+  <link rel="stylesheet" href="oldalakstyles.css">
+  <link rel="shortcut icon" href="media/mg_sign.jpg" type="Sign-icon">  
+</head>
+<body>
+  <header id="navbar">
+    <nav class="navbar">
+      <img src="media/mg_sign.jpg" alt="MG_logo" style="height:40px; vertical-align: middle;">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </nav>
+  </header>
+  
+  <div class="project-card">
+    <img src="auto_kep.jpg" style="width:100%" alt="Projekt">
+    <h3>Nagy Projekt Címe</h3>
+    <button onclick="openModal('modal1')">Részletek megtekintése</button>
+</div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    
+    <h2>Projekt Részletes Leírása</h2>
+    <p>Ide jöhet a hosszú szöveg, a galéria, vagy a videó.</p>
+    <p>Akár beágyazott PDF is.</p>
+  </div>
+</div>
+  
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>© 2026 Majnik Gábor</p>
+      <p>Minden jog fenntartva.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Elérhetőség</p>
+      <div class="social-icons">
+        <div class="tooltip-wrapper">
+          <a href="#" class="email-tooltip">
+            <img src="media/email-1-svgrepo-com.svg" alt="Email" class="social-icon">
+          </a>
+          <span class="tooltip-text">m.gabor011@gmail.com</span>
+        </div>
+        <a href="https://github.com/G4b3n" target="_blank" title="GitHub">
+          <img src="media/github-svgrepo-com.svg" alt="" class="social-icon">
+        </a>
+        <!-- ha később lesz LinkedIn vagy más, ide jöhet -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Ablak megnyitása (id alapján)
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+// Ablak bezárása (id alapján)
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+// Ha a sötét háttérre kattintasz, záródjon be
+window.onclick = function(event) {
+  if (event.target.className === 'modal') {
+    event.target.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatika</title>
+  <link rel="stylesheet" href="oldalakstyles.css">
+  <link rel="shortcut icon" href="media/mg_sign.jpg" type="Sign-icon">  
+</head>
+<body>
+  <header id="navbar">
+    <nav class="navbar">
+      <img src="media/mg_sign.jpg" alt="MG_logo" style="height:40px; vertical-align: middle;">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </nav>
+  </header>
+
+<!-- első projekt -->
+<div class="card-container">
+  <div class="projekt-kartya" onclick="openModal('arduino-projekt')">
+    <div class="kartya-info">
+      <h3>Arduino Okosotthon</h3>      
+      <img src="media/Arduino_Okosotthon.png">
+    </div>
+  </div>
+
+  <div id="arduino-projekt" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('arduino-projekt')">&times;</span>
+          <h2>Arduino Okosotthon nyári gyakorlat alatt</h2>
+          <p>12.-ben ismét kötelezve voltunk nyári gyakorlatra, ahol  Arduino UNO vezérelte mini-okosotthont készítettünk. Egy héten át építettük, 3fős csoportban. Összesen 15 modulból állt össze a ház, ami azt jelentette, hogy minden nap, mindenkinek jutott egy modul. Először össze kellett építeni a modult, majd megírni a kódját leírás alapján és végül letesztelni hogyan működik. Ha sikeres volt akkor levideózta működés közben, majd egy rövid bemutató dokumentumot készít belőle.
+
+          </p>
+          <p>Ez volt az első héten és egyből bele is vezettek minket csapatmunkába, mivel az első dolgunk az volt, hogy létrehozzunk egy közös teams csoportot, felvegyük a napi teendőket, résztvegyünk egy reggeli megbeszélésen, ahol kiosztjuk, hogy az nap ki melyik modult rakja össze és erről egy összefoglaló kis üzenetet kellett írni a közös teams csoportba, hogy az oktatónk is láthassa.</p>
+          <p>Elszúcsász miatt kedden kezdtük ezt a projektet ezért 2. hét hétfőjén épült fel a teljes okosotthon. A reggeli megbeszélésen 2 fele vált a csapat. Egy ember összegyújtötte az elkészült programokat, majd egy nagy projektet nyitott, ahol ötvözte mindegyiket. A csapat másik fele ahova tartoztam akkor pedig a házat építik össze nulláról. Először a ház fa szerkezetét kellett nagyjából összerakni, hogy a modulokat meg lehessen szerelni. Miután minden modul a helyén elkezdtem a kábelezést megcsinálni, ami őszintén a legborzasztóbb feladat volt az egész projekt alatt. Körülbelül 2 óra alatt (ebédszünettel együtt) de kész lett a ház és nem volt más hátra mint, hogy a programot befejezzük.</p>
+          <p>Első próbára a ház nagy része természetesen nem működött, de mit is várhatnánk. Pár kábel átnézés, változó egyeztetés és pin láb ellenőrzés után ismét rápróbáltunk a testelészre és láss csodát működött a ház 2 apróbb bakival.<br>
+          1: a szervó motorok fordított irányban forogtak, ezt nagyon egyszerűen úgy orvosoltam, hogy megfordítottam a forgásirányát. <br>
+          2: a második baki az volt, hogy a bluetooth modul alkalmazása egyikünk telefonjára sem telepíthető, ezért a tanárnő telefonjával teszteltük le, ami szintén sikeres volt.</p>
+          <p>Minden sikeres teszttel a hátunk mögött, jött a dokumentáció. Azt feladatot kellet elvégezni ennél a monstrum projektnél, ami eddig csak 5-10 percet vett igénybe. Most viszont messze nem volt ilyen gyors. <br>
+          És ezt így valósítottuk meg: <br> 
+          <ul>
+            <li>tartalomjegyzék az elején</li>
+            <li>a projekt leírása</li>
+            <li>a modulok leírása</li>
+            <li>alkatrész lista</li>
+            <li>összeszerelési útmutató a bekötéshez ábrával</li>
+            <li>a konkrét programkód,</li>
+            <li>a tesz eredménye</li>
+            <li>lexikon a különböző alkatrészeknek és működésüknek</li>
+          </ul>
+          </p>
+          <p>A teljes projekt dokumentációját megnézheted 
+            <a href="https://drive.google.com/file/d/1vOj4p11-MJdVgPvV2wYKrwZ5wLJjJulQ/view" 
+            target="_blank" 
+            class="arduino-doku" 
+            >itt</a> <br>
+            A használt programkódokat letölthető <a class="arduino-doku" href="https://drive.google.com/file/d/1cBvkYQ6_YP90bhUsdaA5A092hxyHzU3l/view?usp=drive_link" target="_blank">itt</a>.</p>
+          <p>Fun fact a végére: a szervókat sorra tették tönkre a csoportok nagy része (már amelyik szervók működtek...) mivel túl gyors volt az alap forgási sebessége, mi emiatt betettünk egy plusz függvényt, ami ezt lassítja.</p>
+      </div>
+  </div>
+<!-- első projekt -->
+
+<!-- második projekt -->
+  <div class="projekt-kartya" onclick="openModal('AI-ppt')">
+    <div class="kartya-info">
+      <h3>Prezentáció MI-vel</h3>
+      <img src="media/MI_ppt.png" alt="MI_ppt">
+    </div>
+  </div>
+  <div id="AI-ppt" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('AI-ppt')">&times;</span>
+      <h2>Prezentáció készítés MI-val</h2>
+        <p>12-es nyári gyakorlatunk 2. hetét írjuk, ahol belecsöppentünk a webfejlesztés bugyraiba és bemelegítésként ezt a projektet kaptuk. A feladatunk pedig nem más, mint egy prezentáció készítése 100%-ban mesterséges inteligenciával. Nos a feladatot kis túlzással, de mintha le se tójtam volna a saját fejem után menve álltam neki ugyan MI-vel dolgozni, de a rossz ötlettel. <br> 
+        Én úgy gondoltam, hogy jó alaposan utána nézek az összes MI-nek, amit az oktató felrakott segédletként és meglepődik, hogy mennyire szorgalmas vagyok, mert mindegyiket beleraktam a ppt-be. És itt jöttem rá, hogy a vállalati szemlélet nem mindig  jutalmazza a szorgalmat, mivel az oktatón kis híján csalódva nézte végig, hogy én mindegyiket beleraktam és nem 2ről csináltam egy szintén megadott ppt "generátorral". <br> 
+        Ezt leszámítva annyira nem lett rossz, mert nem mondta, hogy csináljam újra vagy javítsak rajta, csak hogy töltsem fel classroomra és teamsre. <br>   
+        A prezentáció megtekinthető és letölthető <a class="AI-ppt" href="https://docs.google.com/presentation/d/1zABJHYmj_aodw6iS77xQuBDDxFAa6BE-/edit?usp=drive_link&ouid=115863600128145703976&rtpof=true&sd=true">innen</a> <br>
+        Beágyazott .pptx-ként 
+        <div class="ppt-container">
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1QD4nlwhdWw6BZNax87xbtEBklqvljgM3YS68equXePxEgSU-7Em7L_jwESUBkg/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div> <br>
+        Vagy akár videóként 
+          <div class="video-container">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube-nocookie.com/embed/cv15mOnbzzM?si=8Y6MXeq1P1S5mXSE" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="projekt-kartya" onclick="openModal('Parkolohaz')">
+    <div class="kartya-info">
+      <h3>Parkolóház szimulálás</h3>
+      <img src="media/parkszim_mukodes.png" alt="Parkolohaz-mukodes">
+    </div>
+  </div>
+  <div id="Parkolohaz" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Parkolohaz')">&times;</span>
+      <h2>Parkolóház működésének szimulálása</h2>
+      <p>
+        Ha a borítókép megrémített akkor nem vag egyedül, bár én amikor ezt láttam már-már inkább könnyeket ejtettem örömömben. Ezt a projektet a tanárúrral együtt készítettük, hisz a felét se tudtuk volna megcsinálni, de. mégis miért mondom ezt? <br>
+        Ez egy több hetes projekt volt, mivel kettő fronton is "harcoltunk". Egyik oldal egy Debian alapú linuxos virtuális gép feltelepítése és konfigurálása az igényünkre, illetve maga a szimulációt végrehajtó program. Elsőnek a virtuális gépet raktuk össze, amire telepítettünk egy docker image-et is, hogy ezon keresztúl létrehozzunk és működtessünk egy webservert. Ennek a folyamatnak a sikeres megoldását láthatjuk 
+        <a class="webserver" href="https://drive.google.com/file/d/1u3JBser_0wDfSOkoqAnNVBW0Hi5sc0XM/view?usp=drive_link" target="_blank">itt.</a>
+      </p>
+      <p>
+        Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. <a href="https://drive.google.com/file/d/1-m-F0FTeUl7vGPGKLcX1Jz4R3ezsZniL/view?usp=drive_link" target="_blank">(kép erről)</a> <br>
+        Elkészítettük a programot, ami a gép webserverét figyelte. <a href="https://drive.google.com/file/d/1YhLoM3sigAneh4-xazl08yrCCNLbdGmc/view?usp=drive_link" target="_blank">(kép erről)</a> <br>
+        És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. <a href="https://drive.google.com/file/d/1AUXNIBtkx4RBaKxYMKxuSC_j4MEIlbOl/view?usp=drive_link" target="_blank">(ízelítő)</a> <br>
+        A teljes programot le tudod tölteni <a href="media/informatika/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
+      </p>
+      <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni <a href="https://drive.google.com/file/d/13PiN4R5sPUfp98zJ6gU6_3sdaOaU2Tf8/view?usp=drive_link" target="_blank">itt.</a>
+      </p>
+      <p>
+        Ha letöltöd a programot és kipróbálod, akkor ezen az útvonalon <pre><code>ParkolohazSzimulacio\ParkolohazSzimulacio\bin\Debug\net8.0\Rendszámok</code></pre>
+        jön létre egy parkolasok.txt szöveges fájl, amiben gyújtődnek az adatok és itt a 4. oszlop a fizetendő összeg lenne. Tekintettel arra, hogy a rendszámok alap esetben 5-10 másodpercenként jönnek a percdíjas számolás miatt nem túl drasztikus számokat kapunk eredményűl. Ezt tudjuk változtatni úgy, hogy a Program.cs fájlban átírjuk az intervallumot <pre><code>Thread.Sleep(vszg.Next(5000,10000));</code></pre> nagyobb számokra, de figyelni kell, mert ezek ezredmásodpercben vannak megadva.
+      </p>
+      <p>Egy másik módszer, hogy másodpercdíjat számoljunk:
+        <pre><code>
+          Régi (percdíj)
+          const int ratePerMinute = 5;
+          int minutes = (int)(exitDateTime - entryDateTime).TotalMinutes;
+          int payment = minutes * ratePerMinute;
+          logLine = $"{numberPlate}\t{entryTime}\t{timestamp}\t{payment}";
+
+          Új (másodpercdíj)
+          const int ratePerSecond = 1;
+          int seconds  = (int)(exitDateTime - entryDateTime).TotalSeconds;
+          int payment  = seconds * ratePerSecond;
+          logLine = $"{numberPlate}\t{entryTime}\t{timestamp}\t{payment} Ft (másodpercek alapján)";
+        </code></pre>
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>© 2026 Majnik Gábor</p>
+      <p>Minden jog fenntartva.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Elérhetőség</p>
+      <div class="social-icons">
+        <div class="tooltip-wrapper">
+          <a href="#" class="email-tooltip">
+            <img src="media/email-1-svgrepo-com.svg" alt="Email" class="social-icon">
+          </a>
+          <span class="tooltip-text">m.gabor011@gmail.com</span>
+        </div>
+        <a href="https://github.com/G4b3n" target="_blank" title="GitHub">
+          <img src="media/github-svgrepo-com.svg" alt="" class="social-icon">
+        </a>
+        <!-- ha később lesz LinkedIn vagy más, ide jöhet -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Ablak megnyitása (id alapján)
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+// Ablak bezárása (id alapján)
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+// Ha a sötét háttérre kattintasz, záródjon be
+window.onclick = function(event) {
+  if (event.target.className === 'modal') {
+    event.target.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
