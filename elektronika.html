@@ -20,22 +20,103 @@
     </nav>
   </header>
   
-  <div class="project-card">
-    <img src="auto_kep.jpg" style="width:100%" alt="Projekt">
-    <h3>Nagy Projekt Címe</h3>
-    <button onclick="openModal('modal1')">Részletek megtekintése</button>
-</div>
-
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    
-    <h2>Projekt Részletes Leírása</h2>
-    <p>Ide jöhet a hosszú szöveg, a galéria, vagy a videó.</p>
-    <p>Akár beágyazott PDF is.</p>
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('egyutas-egyeniranyito')">
+      <div class="kartya-info">
+        <h3>Egyutas egyenirányító</h3>
+      </div>
+    </div>
   </div>
-</div>
   
+  <div id="egyutas-egyeniranyito" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('egyutas-egyeniranyito')">&times;</span>
+      <h2>Egyutas egyenirányító mérése</h2>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('fazisszog')">
+      <div class="kartya-info">
+        <h3>fazisszog</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="fazisszog" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('fazisszog')">&times;</span>
+      <h2>fazisszog</h2>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('kondenzator-toltes')">
+      <div class="kartya-info">
+        <h3>kondenzator-toltes</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="kondenzator-toltes" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('kondenzator-toltes')">&times;</span>
+      <h2>kondenzator-toltes</h2>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('logikai-meres')">
+      <div class="kartya-info">
+        <h3>logikai-meres</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="logikai-meres" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('logikai-meres')">&times;</span>
+      <h2>logikai-meres</h2>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('oscilloszkop-meres')">
+      <div class="kartya-info">
+        <h3>oscilloszkop-meres</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="oscilloszkop-meres" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('oscilloszkop-meres')">&times;</span>
+      <h2>oscilloszkop-meres</h2>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="projekt-kartya" onclick="openModal('szuroaram')">
+      <div class="kartya-info">
+        <h3>szuroaram</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="szuroaram" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('szuroaram')">&times;</span>
+      <h2>szuroaram</h2>
+
+    </div>
+  </div>
+
+
 <footer>
   <div class="footer-inner">
     <div class="footer-left">
@@ -67,6 +148,9 @@
       </div>
     </div>
   </div>
+
+
+  
 </footer>
 
 <script>
