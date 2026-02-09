@@ -393,8 +393,9 @@ code {
 }
 
 .jegyzokonyv-item img {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 400px;
   max-height: 65vh;             /* ne legyen magasabb a képernyő 65%-ánál */
   object-fit: contain;          /* a teljes kép látszódjon, ne vágódjon */
   border-radius: 10px;
