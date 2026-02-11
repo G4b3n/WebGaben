@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informatika</title>
-  <link rel="stylesheet" href="oldalakstyles.css">
-  <link rel="shortcut icon" href="media/mg_sign.jpg" type="Sign-icon">  
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="media/mg_sign.webp" type="Sign-icon">
   <base target="_blank">
 </head>
-<body>
+<body class="info-page">
   <header id="navbar">
     <nav class="navbar">
-      <img src="media/mg_sign.jpg" alt="MG_logo" style="height:40px; vertical-align: middle;">
+      <img src="media/mg_sign.webp" alt="MG_logo" style="height:40px; vertical-align: middle;">
       <a href="index.html" target="_self">Kezdőlap</a>
       <a href="informatika.html" target="_self">Informatika</a>
       <a href="elektronika.html" target="_self">Elektronika</a>
@@ -20,12 +20,14 @@
     </nav>
   </header>
 
+  <h1 style="text-align: center;">Egy pár projekt, ami főként az informatikához tartozik vagy túlnyomó részt az kell hozzá</h1>
+
 <!-- első projekt -->
 <div class="card-container">
   <div class="projekt-kartya" onclick="openModal('arduino-projekt')">
     <div class="kartya-info">
       <h3>Arduino Okosotthon</h3>      
-      <img src="media/Arduino_Okosotthon.png">
+      <img src="media/Arduino_Okosotthon.webp">
     </div>
   </div>
 
@@ -69,7 +71,7 @@
   <div class="projekt-kartya" onclick="openModal('AI-ppt')">
     <div class="kartya-info">
       <h3>Prezentáció MI-vel</h3>
-      <img src="media/MI_ppt.png" alt="MI_ppt">
+      <img src="media/MI_ppt.webp" alt="MI_ppt">
     </div>
   </div>
   <div id="AI-ppt" class="modal">
@@ -85,18 +87,18 @@
           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1QD4nlwhdWw6BZNax87xbtEBklqvljgM3YS68equXePxEgSU-7Em7L_jwESUBkg/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div> <br>
         Vagy akár videóként 
-          <div class="video-container">
-            <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube-nocookie.com/embed/cv15mOnbzzM?si=8Y6MXeq1P1S5mXSE" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="origin" 
-              allowfullscreen>
-            </iframe>
-          </div>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube-nocookie.com/embed/cv15mOnbzzM?si=8Y6MXeq1P1S5mXSE" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </p>
     </div>
   </div>
@@ -107,7 +109,7 @@
   <div class="projekt-kartya" onclick="openModal('Parkolohaz')">
     <div class="kartya-info">
       <h3>Parkolóház szimulálás</h3>
-      <img src="media/parkszim_mukodes.png" alt="Parkolohaz-mukodes">
+      <img src="media/info/ParkolohazSzimulacio_eredmeny.webp" alt="Parkolohaz-mukodes">
     </div>
   </div>
   <div id="Parkolohaz" class="modal">
@@ -116,16 +118,16 @@
       <h2>Parkolóház működésének szimulálása</h2>
       <p>
         Ha a borítókép megrémített akkor nem vag egyedül, bár én amikor ezt láttam már-már inkább könnyeket ejtettem örömömben. Ezt a projektet a tanárúrral együtt készítettük, hisz a felét se tudtuk volna megcsinálni, de. mégis miért mondom ezt? <br>
-        Ez egy több hetes projekt volt, mivel kettő fronton is "harcoltunk". Egyik oldal egy Debian alapú linuxos virtuális gép feltelepítése és konfigurálása az igényünkre, illetve maga a szimulációt végrehajtó program. Elsőnek a virtuális gépet raktuk össze, amire telepítettünk egy docker image-et is, hogy ezon keresztúl létrehozzunk és működtessünk egy webservert. Ennek a folyamatnak a sikeres megoldását láthatjuk 
-        <a class="webserver" href="https://drive.google.com/file/d/1u3JBser_0wDfSOkoqAnNVBW0Hi5sc0XM/view?usp=drive_link" target="_blank">itt.</a>
+        Ez egy több hetes projekt volt, mivel kettő fronton is "harcoltunk". Egyik oldal egy Debian alapú linuxos virtuális gép feltelepítése és konfigurálása az igényünkre, illetve maga a szimulációt végrehajtó program. Elsőnek a virtuális gépet raktuk össze, amire telepítettünk egy docker image-et is, hogy ezon keresztúl létrehozzunk és működtessünk egy webservert.
+        <a class="webserver" href="media/info/docker_webserver.webp" target="_blank">(kép erről)</a>
       </p>
       <p>
-        Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. <a href="https://drive.google.com/file/d/1-m-F0FTeUl7vGPGKLcX1Jz4R3ezsZniL/view?usp=drive_link" target="_blank">(kép erről)</a> <br>
-        Elkészítettük a programot, ami a gép webserverét figyelte. <a href="https://drive.google.com/file/d/1YhLoM3sigAneh4-xazl08yrCCNLbdGmc/view?usp=drive_link" target="_blank">(kép erről)</a> <br>
-        És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. <a href="https://drive.google.com/file/d/1AUXNIBtkx4RBaKxYMKxuSC_j4MEIlbOl/view?usp=drive_link" target="_blank">(ízelítő)</a> <br>
+        Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. <a href="media/info/parkszim_kliens.webp" target="_blank">(kép erről)</a> <br>
+        Elkészítettük a programot, ami a gép webserverét figyelte. <a href="media/info/parkszim_program.webp" target="_blank">(kép erről)</a> <br>
+        És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. <a href="media/info/parkszim_server.webp" target="_blank">(ízelítő)</a> <br>
         A teljes programot le tudod tölteni <a href="media/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
       </p>
-      <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni <a href="https://drive.google.com/file/d/13PiN4R5sPUfp98zJ6gU6_3sdaOaU2Tf8/view?usp=drive_link" target="_blank">itt.</a>
+      <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni <a href="media/info/ParkolohazSzimulacio_eredmeny.webp" target="_blank">itt.</a>
       </p>
       <p>
         Ha letöltöd a programot és kipróbálod, akkor ezen az útvonalon <pre><code>ParkolohazSzimulacio\ParkolohazSzimulacio\bin\Debug\net8.0\Rendszámok</code></pre>
@@ -209,7 +211,7 @@
       <p>Elérhetőség</p>
       <div class="social-icons">
         <div class="tooltip-wrapper">
-          <a href="#" class="email-tooltip">
+          <a href="mailto:m.gabor011@gmail.com" class="email-tooltip">
             <img src="media/email-1-svgrepo-com.svg" alt="Email" class="social-icon">
           </a>
           <span class="tooltip-text">m.gabor011@gmail.com</span>
@@ -224,6 +226,8 @@
 </footer>
 
 <script>
+
+
 // Ablak megnyitása (id alapján)
 function openModal(id) {
   document.getElementById(id).style.display = "block";
