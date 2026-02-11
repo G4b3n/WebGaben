@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informatika</title>
-  <link rel="stylesheet" href="oldalakstyles.css">
-  <link rel="shortcut icon" href="media/mg_sign.jpg" type="Sign-icon">  
-  <base target="_blank">
+  <title>Rólam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="media/mg_sign.webp" type="Sign-icon">
 </head>
-<body>
+<body class="rolam-page">
   <header id="navbar">
     <nav class="navbar">
-      <img src="media/mg_sign.jpg" alt="MG_logo" style="height:40px; vertical-align: middle;">
+      <img src="media/mg_sign.webp" alt="MG_logo" style="height:40px; vertical-align: middle;">
       <a href="index.html" target="_self">Kezdőlap</a>
       <a href="informatika.html" target="_self">Informatika</a>
       <a href="elektronika.html" target="_self">Elektronika</a>
@@ -37,24 +36,26 @@
     </div>
 
     <div class="footer-contact">
-      <p>Elérhetőség</p>
+      <p>Elérhetőségek:</p>
       <div class="social-icons">
         <div class="tooltip-wrapper">
-          <a href="#" class="email-tooltip">
+          <a href="mailto:m.gabor011@gmail.com" class="email-tooltip">
             <img src="media/email-1-svgrepo-com.svg" alt="Email" class="social-icon">
           </a>
-          <span class="tooltip-text">m.gabor011@gmail.com</span>
+          <span class="tooltip-text"> m.gabor011@gmail.com</span>
         </div>
         <a href="https://github.com/G4b3n" target="_blank" title="GitHub">
           <img src="media/github-svgrepo-com.svg" alt="" class="social-icon">
         </a>
-        <!-- ha később lesz LinkedIn vagy más, ide jöhet -->
       </div>
     </div>
   </div>
 </footer>
 
 <script>
+  
+
+
 // Ablak megnyitása (id alapján)
 function openModal(id) {
   document.getElementById(id).style.display = "block";
