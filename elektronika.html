@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informatika</title>
-  <link rel="stylesheet" href="oldalakstyles.css">
-  <link rel="shortcut icon" href="media/mg_sign.jpg" type="Sign-icon">  
+  <title>Elektronika</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="media/mg_sign.webp" type="Sign-icon">  
   <base target="_blank">
 </head>
-<body>
+<body class="elektro-page">
   <header id="navbar">
     <nav class="navbar">
-      <img src="media/mg_sign.jpg" alt="MG_logo" style="height:40px; vertical-align: middle;">
+      <img src="media/mg_sign.webp" alt="MG_logo" style="height:40px; vertical-align: middle;">
       <a href="index.html" target="_self">Kezdőlap</a>
       <a href="informatika.html" target="_self">Informatika</a>
       <a href="elektronika.html" target="_self">Elektronika</a>
@@ -20,117 +20,83 @@
     </nav>
   </header>
   
-  <h1 style="text-align: center;">Minden dokument a 9-11.ig tartó elektronika, analóg áramkörök, stb. órákon végzett mérésekről.</h1>
-<!--ELSŐ PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('egyutas-egyeniranyito')">
-      <div class="kartya-info">
-        <h3>Egyutas egyenirányító mérés</h3>
-          <img src="https://i.ibb.co/0STjrdw/E-E-feladatlap.jpg" alt="Egyutas egyenirányító feladatlap">      </div>
-    </div>
-  </div>
-  
-  <div id="egyutas-egyeniranyito" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('egyutas-egyeniranyito')">&times;</span>
-      <h2>Egyutas egyenirányító mérése</h2>
+  <h1 style="text-align: center;">Minden ami a 9-11.ig tartó elektronika, elektrotechnika, analóg áramkörök, stb. órákon végzett mérésekről.</h1>
 
-    </div>
-  </div>
-<!--ELSŐ PROJECT-->
-<!--MÁSODIK PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('fazisszog')">
-      <div class="kartya-info">
-        <h3>Fázisszög eltérés mérés</h3>
-        <img src="https://i.ibb.co/rKXWXJMB/Spagetti2.jpg" alt="Spagetti2">
+
+
+<!--FELADATLAPOK-->
+<div style="padding: 3rem; font-size: large;">
+  <div style="background-color: rgba(10, 26, 49, 0.85); border-radius: 16px; padding: 2rem; padding-top: 1rem; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+    <h2 style="text-align: center; margin-bottom: 2rem; color: #a1b8be;">Feladatlapok</h2>
+
+    <div class="feladatlapok-container">
+      <!-- Feladatlap: Egyutas egyenirányító -->
+      <div class="feladatlap-kartya" data-feladatlap="egyutas">
+        <h3>Egyutas egyenirányító</h3>
+        <div class="thumbnail-preview">
+          <img src="media/elektro/egyutas-egyeniranyito/E_E_feladatlap.webp" alt="Egyutas egyenirányító feladatlap" loading="lazy">
+          <div class="oldalak-szama">7 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
       </div>
-    </div>
-  </div>
-  
-  <div id="fazisszog" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('fazisszog')">&times;</span>
-      <h2>fazisszog</h2>
 
-    </div>
-  </div>
-<!--MÁSODIK PROJECT-->
-<!--HARMADIK PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('kondenzator-toltes')">
-      <div class="kartya-info">
+      <!-- Feladatlap: Kondenzátor -->
+      <div class="feladatlap-kartya" data-feladatlap="kondi">
         <h3>Kondenzátor töltés</h3>
-        <img src="https://i.ibb.co/Vcv8vsLh/Kondenz-tort-lt-s.jpg" alt="Kondenzátor-töltés">
+        <div class="thumbnail-preview">
+          <img src="media/elektro/kondenzator-toltes/Kondenzátortöltés.webp" alt="Kondenzátor töltés feladatlap" loading="lazy">
+          <div class="oldalak-szama">4 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
       </div>
-    </div>
-  </div>
-  
-  <div id="kondenzator-toltes" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('kondenzator-toltes')">&times;</span>
-      <h2>Kondenzátor töltés</h2>
 
-    </div>
-  </div>
-<!--HARMADIK PROJECT-->
-<!--NEGYEDIK PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('logikai-meres')">
-      <div class="kartya-info">
-        <h3>Logikai kapuk mérése</h3>
-        <img src="https://i.ibb.co/mr5VqrmC/Logikai-m-r-sek.jpg" alt="logikai-kapuk-mérése">
+      <!-- Feladatlap: Logikai kapuk -->
+      <div class="feladatlap-kartya" data-feladatlap="logikai">
+        <h3>Logikai kapuk</h3>
+        <div class="thumbnail-preview">
+          <img src="media/elektro/logikai/Logikai_mérések.webp" alt="Logikai kapuk feladatlap" loading="lazy">
+          <div class="oldalak-szama">2 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
       </div>
-    </div>
-  </div>
-  
-  <div id="logikai-meres" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('logikai-meres')">&times;</span>
-      <h2>logikai-meres</h2>
 
-    </div>
-  </div>
-<!--NEGYEDIK PROJECT-->
-<!--ÖTÖDIK PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('oscilloszkop-meres')">
-      <div class="kartya-info">
+      <!-- Feladatlap: Oscilloszkóp -->
+      <div class="feladatlap-kartya" data-feladatlap="oscill">
         <h3>Oscilloszkópos mérések</h3>
-        <img src="https://i.ibb.co/p6TF5kbv/Oscilloszk-p-kezdetek-1.jpg" alt="Oscilloszkópos-mérés">
+        <div class="thumbnail-preview">
+          <img src="media/elektro/oscillkoszkop/Oscilloszkóp_kezdetek_1.webp" alt="Oscilloszkópos mérések feladatlap" loading="lazy">
+          <div class="oldalak-szama">12 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
+      </div>
+
+      <!-- Feladatlap: Szűrőáramkör -->
+      <div class="feladatlap-kartya" data-feladatlap="szuro">
+        <h3>Szűrőáramkör</h3>
+        <div class="thumbnail-preview">
+          <img src="media/elektro/szuroaram/Szuroaramkor_meres_1.webp" alt="Szűrőáramkör feladatlap" loading="lazy">
+          <div class="oldalak-szama">2 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
+      </div>
+
+      <!-- Egyéb -->
+      <div class="feladatlap-kartya" data-feladatlap="egyeb">
+        <h3>Egyveleg</h3>
+        <div class="thumbnail-preview">
+          <img src="media/istockphoto-1066964788-612x612.webp" loading="lazy">
+          <div class="oldalak-szama">3 oldal</div>
+        </div>
+        <button class="megtekintés-btn">Megtekintés</button>
       </div>
     </div>
   </div>
-  
-  <div id="oscilloszkop-meres" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('oscilloszkop-meres')">&times;</span>
-      <h2>oscilloszkop-meres</h2>
+</div>
+<!--FELADATLAPOK-->
 
-    </div>
-  </div>
-<!--ÖTÖDIK PROJECT-->
-<!--HATODIK PROJECT-->
-  <div class="card-container">
-    <div class="projekt-kartya" onclick="openModal('szuroaram')">
-      <div class="kartya-info">
-        <h3>Szűrőáramkörös mérés</h3>
-        <img src="https://i.ibb.co/NbBtHTw/Szuroaramkor-meres-1.jpg" alt="Szűrőáramkör">
-      </div>
-    </div>
-  </div>
-  
-  <div id="szuroaram" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('szuroaram')">&times;</span>
-      <h2>szuroaram</h2>
-
-    </div>
-  </div>
-<!--HATODIK PROJECT-->
-<!--HETEDIK PROJECT-->
-<div style="padding: 3rem 1rem; font-size: large;">
-  <div style="background-color: rgba(10, 26, 49, 0.85); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+<!--JEGYZŐKÖNYVEK-->
+<div style="padding: 3rem; font-size: large;">
+  <div style="background-color: rgba(10, 26, 49, 0.85); border-radius: 16px; padding: 2rem; padding-top: 1rem; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
     <h2 style="text-align: center; margin-bottom: 2rem; color: #a1b8be;">Jegyzőkönyvek</h2>
 
     <div class="jegyzokonyvek-container">
@@ -139,7 +105,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="dioda">
         <h3>Dióda karakterisztika</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/nM5P7Vtr/Dioda-karakterisztika-meres-1.jpg" alt="Dióda karakterisztika előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_1.webp" alt="Dióda karakterisztika előnézet" loading="lazy">
           <div class="oldalak-szama">5 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -149,8 +115,8 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="kondenzator">
         <h3>Kondenzátor töltés</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/srSzCcy/Kondenz-tor-toltes-1.jpg" alt="Kondenzátor töltés előnézet" loading="lazy">
-          <div class="oldalak-szama">7 oldal</div>
+          <img src="media/elektro/jegyzokonyvek/Kondenzator_toltes_1.webp" alt="Kondenzátor töltés előnézet" loading="lazy">
+          <div class="oldalak-szama">5 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
       </div>
@@ -159,7 +125,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="led">
         <h3>LED tulajdonság</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/VW5JDPMX/LED-tulajdonsag-1.jpg" alt="LED tulajdonság előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/LED_tulajdonsag_1.webp" alt="LED tulajdonság előnézet" loading="lazy">
           <div class="oldalak-szama">5 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -169,7 +135,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="logikai">
         <h3>Logikai kapuk</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/GfK0ZyVw/Logikai-meres-1.jpg" alt="Logikai kapuk előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/Logikai_meres_1.webp" alt="Logikai kapuk előnézet" loading="lazy">
           <div class="oldalak-szama">4 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -179,7 +145,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="pi">
         <h3>PI kapcsolás 'Z' paraméter</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/HDhLhZRC/PI-kapcsolas-Z-parameter-1.jpg" alt="PI kapcsolás Z előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/PI_kapcsolas_Z_parameter_1.webp" alt="PI kapcsolás Z előnézet" loading="lazy">
           <div class="oldalak-szama">3 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -189,7 +155,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="szuperpozicio">
         <h3>Szuperpozíció</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/mr2GyC4J/Szuperpozicio-jegyzokonyv-1.jpg" alt="Szuperpozíció előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/Szuperpozicio_jegyzokonyv_1.webp" alt="Szuperpozíció előnézet" loading="lazy">
           <div class="oldalak-szama">3 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -199,7 +165,7 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="z">
         <h3>'Z' paraméter négypólus</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/ymg1gPBC/Z-parameter-negypolus-1.jpg" alt="Z paraméter négypólus előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/Z_parameter_negypolus_1.webp" alt="Z paraméter négypólus előnézet" loading="lazy">
           <div class="oldalak-szama">4 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
@@ -209,27 +175,27 @@
       <div class="jegyzokonyv-kartya" data-jegyzokonyv="zyh">
         <h3>Z-Y-H paraméterek PI kapcsolásban</h3>
         <div class="thumbnail-preview">
-          <img src="https://i.ibb.co/Wpc5srzS/Z-Y-H-meres-PI-kapcsolas-1.jpg" alt="Z-Y-H paraméterek előnézet" loading="lazy">
+          <img src="media/elektro/jegyzokonyvek/Z_Y_H_meres_PI_kapcsolas_1.webp" alt="Z-Y-H paraméterek előnézet" loading="lazy">
           <div class="oldalak-szama">4 oldal</div>
         </div>
         <button class="megtekintés-btn">Megtekintés</button>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- Lightbox – töröld a régi hidden class-t! -->
+
+
 <div id="lightbox" class="lightbox">
   <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" src="" alt="Jegyzőkönyv oldal">
+  <div class="lightbox-content-wrapper"></div>
   <div class="lightbox-nav">
     <button class="lightbox-prev">&larr;</button>
     <span id="oldal-szamlalo">1 / 1</span>
     <button class="lightbox-next">&rarr;</button>
   </div>
 </div>
-<!--HETEDIK PROJECT-->
+<!--JEGYZŐKÖNYV-->
 
 
 
@@ -253,7 +219,7 @@
       <p>Elérhetőség</p>
       <div class="social-icons">
         <div class="tooltip-wrapper">
-          <a href="#" class="email-tooltip">
+          <a href="mailto:m.gabor011@gmail.com" class="email-tooltip">
             <img src="media/email-1-svgrepo-com.svg" alt="Email" class="social-icon">
           </a>
           <span class="tooltip-text">m.gabor011@gmail.com</span>
@@ -265,9 +231,6 @@
       </div>
     </div>
   </div>
-
-
-  
 </footer>
 
 
@@ -288,58 +251,104 @@ window.onclick = function(event) {
     event.target.style.display = "none";
   }
 }
-// Lightbox adatok (itt tároljuk a képeket jegyzőkönyvenként)
-const jegyzokonyvekKepek = {
-  dioda: [
-    "https://i.ibb.co/nM5P7Vtr/Dioda-karakterisztika-meres-1.jpg",
-    "https://i.ibb.co/DDGCKBQJ/Dioda-karakterisztika-meres-2.jpg",
-    "https://i.ibb.co/d0CSXVFk/Dioda-karakterisztika-meres-3.jpg",
-    "https://i.ibb.co/gGjp5CL/Dioda-karakterisztika-meres-4.jpg",
-    "https://i.ibb.co/fVMFBbXy/Dioda-karakterisztika-meres-5.jpg",
+
+// Egyesített kép/videó adatok - feladatlapok és jegyzőkönyvek
+const kepvideoAdat = {
+  // FELADATLAPOK
+  egyutas: [
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_feladatlap.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_jegyzőkönyv_kezdőlap.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_kapcsolások.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_leírás.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_oscilloszkóperedmények_1.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_oscilloszkóperedmények_2.webp' },
+    { type: 'image', src: 'media/elektro/egyutas-egyeniranyito/E_E_oscilloszkóperedmények_linlogpapíron.webp' }
   ],
-  kondenzator: [
-    "https://i.ibb.co/srSzCcy/Kondenz-tor-toltes-1.jpg",
-    "https://i.ibb.co/SwKx08TX/Kondenz-tor-toltes-2.jpg",
-    "https://i.ibb.co/7tgkFn7v/Kondenz-tor-toltes-3.jpg",
-    "https://i.ibb.co/5xv0FvBC/Kondenz-tor-toltes-4.jpg",
-    "https://i.ibb.co/PGqHWjgY/Kondenz-tor-toltes-5.jpg",
-    "https://i.ibb.co/RnTfkv6/Kondenz-tor-toltes-6.jpg",
-    "https://i.ibb.co/zV6Nxds2/Kondenz-tor-toltes-7.jpg",
-  ],
-  led: [
-    "https://i.ibb.co/VW5JDPMX/LED-tulajdonsag-1.jpg",
-    "https://i.ibb.co/PdbNh2w/LED-tulajdonsag-2.jpg",
-    "https://i.ibb.co/qLsMFmLD/LED-tulajdonsag-3.jpg",
-    "https://i.ibb.co/r2ZQF3cL/LED-tulajdonsag-4.jpg",
-    "https://i.ibb.co/SwtbMkxX/LED-tulajdonsag-5.jpg",
+  kondi: [
+    { type: 'image', src: 'media/elektro/kondenzator-toltes/Kondenzátortöltés.webp' },
+    { type: 'image', src: 'media/elektro/kondenzator-toltes/Kondenzátortöltés2.webp' },
+    { type: 'video', src: 'https://www.youtube.com/embed/63LYwNtuU_U' },
+    { type: 'video', src: 'https://www.youtube.com/embed/-xYtEBXxgno' },
+    { type: 'video', src: 'https://www.youtube.com/embed/ybK_WBAprb0' }
   ],
   logikai: [
-    "https://i.ibb.co/GfK0ZyVw/Logikai-meres-1.jpg",
-    "https://i.ibb.co/gby4wMJF/Logikai-meres-2.jpg",
-    "https://i.ibb.co/ccy3Vnwj/Logikai-meres-3.jpg",
-    "https://i.ibb.co/ycHwz5SL/Logikai-meres-4.jpg",
+    { type: 'image', src: 'media/elektro/logikai/Logikai_mérések.webp' },
+    { type: 'image', src: 'media/elektro/logikai/Logikai_mérések_eredmény.webp'}
+  ],
+  oscill: [
+    { type: 'image', src: 'media/elektro/oscillkoszkop/Oscilloszkóp_kezdetek_1.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_1.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_2.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_3.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_4.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_1.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_2.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_3.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_4.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_5.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_6.webp' },
+    { type: 'image', src: 'media/elektro/oscillkoszkop/O_GY_E_7.webp' },
+  ],
+  szuro: [
+    { type: 'image', src: 'media/elektro/szuroaram/Szuroaramkor_meres_1.webp' },
+    { type: 'image', src: 'media/elektro/szuroaram/Szuroaramkor_meres_2.webp' }
+  ],
+  egyeb: [
+    { type: 'video', src: 'https://youtube.com/embed/aAjZml1rAsI'},
+    { type: 'video', src: 'https://youtube.com/embed/Oq01odbwVeM'},
+    { type: 'video', src: 'https://youtube.com/embed/7Rz-AW3B1PY'}
+  ],
+  // JEGYZŐKÖNYVEK
+  dioda: [
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_3.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_4.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Dioda_karakterisztika_meres_5.webp' }
+  ],
+  kondenzator: [
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_3.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_4.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_5.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_6.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Kondenzator_toltes_7.webp' }
+  ],
+  led: [
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/LED_tulajdonsag_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/LED_tulajdonsag_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/LED_tulajdonsag_3.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/LED_tulajdonsag_4.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/LED_tulajdonsag_5.webp' }
+  ],
+  logikai_jegyzo: [
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Logikai_meres_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Logikai_meres_2.webp', portrait: true },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Logikai_meres_3.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Logikai_meres_4.webp' }
   ],
   pi: [
-    "https://i.ibb.co/HDhLhZRC/PI-kapcsolas-Z-parameter-1.jpg",
-    "https://i.ibb.co/ynVZw2Yn/PI-kapcsolas-Z-parameter-2.jpg",
-    "https://i.ibb.co/8DD3N9t4/PI-kapcsolas-Z-parameter-3.jpg",
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/PI_kapcsolas_Z_parameter_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/PI_kapcsolas_Z_parameter_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/PI_kapcsolas_Z_parameter_3.webp' }
   ],
   szuperpozicio: [
-    "https://i.ibb.co/mr2GyC4J/Szuperpozicio-jegyzokonyv-1.jpg",
-    "https://i.ibb.co/Xk6884RF/Szuperpozicio-jegyzokonyv-2.jpg",
-    "https://i.ibb.co/5g0VC1Ms/Szuperpozicio-jegyzokonyv-3.jpg",
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Szuperpozicio_jegyzokonyv_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Szuperpozicio_jegyzokonyv_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Szuperpozicio_jegyzokonyv_3.webp' }
   ],
   z: [
-    "https://i.ibb.co/ymg1gPBC/Z-parameter-negypolus-1.jpg",
-    "https://i.ibb.co/Y4Fgzz62/Z-parameter-negypolus-2.jpg",
-    "https://i.ibb.co/YFmcdGjx/Z-parameter-negypolus-3.jpg",
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_parameter_negypolus_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_parameter_negypolus_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_parameter_negypolus_3.webp' }
   ],
   zyh: [
-    "https://i.ibb.co/Wpc5srzS/Z-Y-H-meres-PI-kapcsolas-1.jpg",
-    "https://i.ibb.co/Y7DP6524/Z-Y-H-meres-PI-kapcsolas-2.jpg",
-    "https://i.ibb.co/gb751GZT/Z-Y-H-meres-PI-kapcsolas-3.jpg",
-    "https://i.ibb.co/B26C4NmG/Z-Y-H-meres-PI-kapcsolas-4.jpg",
-  ],
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_Y_H_meres_PI_kapcsolas_1.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_Y_H_meres_PI_kapcsolas_2.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_Y_H_meres_PI_kapcsolas_3.webp' },
+    { type: 'image', src: 'media/elektro/jegyzokonyvek/Z_Y_H_meres_PI_kapcsolas_4.webp' }
+  ]
 };
 
 
@@ -347,7 +356,6 @@ let currentIndex = 0;
 let currentJegyzokonyv = null;
 
 const lightbox = document.getElementById('lightbox');
-const mainImg = document.getElementById('lightbox-img');
 const szamlalo = document.getElementById('oldal-szamlalo');
 const closeBtn = document.querySelector('.lightbox-close');
 const prevBtn = document.querySelector('.lightbox-prev');
@@ -355,22 +363,21 @@ const nextBtn = document.querySelector('.lightbox-next');
 
 // Debug: elemek ellenőrzése
 console.log("Lightbox elem:", lightbox);
-console.log("Main img:", mainImg);
 console.log("Szamlalo:", szamlalo);
 console.log("Close btn:", closeBtn);
 console.log("Prev btn:", prevBtn);
 console.log("Next btn:", nextBtn);
 
-// Nyitás
+// Nyitás - tisztázott selektor, hogy tartalmazza a feladatlap és jegyzőkönyv kártyákat is
 document.querySelectorAll('.megtekintés-btn, .thumbnail-preview').forEach(elem => {
   elem.addEventListener('click', () => {
-    const kartya = elem.closest('.jegyzokonyv-kartya');
-    currentJegyzokonyv = kartya?.dataset?.jegyzokonyv;
+    const kartya = elem.closest('.jegyzokonyv-kartya, .feladatlap-kartya');
+    currentJegyzokonyv = kartya?.dataset?.jegyzokonyv || kartya?.dataset?.feladatlap;
 
-    console.log("Kattintás! Jegyzőkönyv azonosító:", currentJegyzokonyv);
+    console.log("Kattintás! Azonosító:", currentJegyzokonyv);
 
-    if (!currentJegyzokonyv || !jegyzokonyvekKepek[currentJegyzokonyv]) {
-      console.error("Hibás vagy hiányzó jegyzőkönyv:", currentJegyzokonyv);
+    if (!currentJegyzokonyv || !kepvideoAdat[currentJegyzokonyv]) {
+      console.error("Hibás vagy hiányzó adat:", currentJegyzokonyv);
       return;
     }
 
@@ -381,34 +388,49 @@ document.querySelectorAll('.megtekintés-btn, .thumbnail-preview').forEach(elem 
 });
 
 function updateLightbox() {
-  const kepek = jegyzokonyvekKepek[currentJegyzokonyv];
-  if (!kepek || kepek.length === 0) {
-    console.error("Nincs kép ehhez a jegyzőkönyvhöz:", currentJegyzokonyv);
+  const elemek = kepvideoAdat[currentJegyzokonyv];
+  if (!elemek || elemek.length === 0) {
+    console.error("Nincs tartalom ehhez:", currentJegyzokonyv);
     return;
   }
 
-  // Csak az aktuális képet töltjük be (gyorsabb)
-  mainImg.src = kepek[currentIndex];
-  mainImg.alt = `${currentJegyzokonyv} - ${currentIndex + 1}. oldal`;
+  const elem = elemek[currentIndex];
+  const wrapper = document.querySelector('.lightbox-content-wrapper');
+  wrapper.innerHTML = '';
 
-  szamlalo.textContent = `${currentIndex + 1} / ${kepek.length}`;
+  if (elem.type === 'image') {
+    const img = document.createElement('img');
+    img.className = elem.portrait ? 'lightbox-content portrait' : 'lightbox-content';
+    img.src = elem.src;
+    img.alt = `${currentJegyzokonyv} - ${currentIndex + 1}. oldal`;
+    wrapper.appendChild(img);
+  } else if (elem.type === 'video') {
+    const iframe = document.createElement('iframe');
+    iframe.className = 'lightbox-video';
+    iframe.src = elem.src;
+    iframe.frameborder = '0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    wrapper.appendChild(iframe);
+  }
 
-  console.log("Lightbox frissítve – aktuális kép:", mainImg.src);
+  szamlalo.textContent = `${currentIndex + 1} / ${elemek.length}`;
+  console.log("Lightbox frissítve:", elem);
 }
 
 // Navigáció
 if (prevBtn) {
   prevBtn.addEventListener('click', () => {
-    const kepek = jegyzokonyvekKepek[currentJegyzokonyv];
-    currentIndex = (currentIndex - 1 + kepek.length) % kepek.length;
+    const elemek = kepvideoAdat[currentJegyzokonyv];
+    currentIndex = (currentIndex - 1 + elemek.length) % elemek.length;
     updateLightbox();
   });
 }
 
 if (nextBtn) {
   nextBtn.addEventListener('click', () => {
-    const kepek = jegyzokonyvekKepek[currentJegyzokonyv];
-    currentIndex = (currentIndex + 1) % kepek.length;
+    const elemek = kepvideoAdat[currentJegyzokonyv];
+    currentIndex = (currentIndex + 1) % elemek.length;
     updateLightbox();
   });
 }
