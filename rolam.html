@@ -3,21 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólió önmagam bemutatása">
   <title>Rólam</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="media/mg_sign.webp" type="Sign-icon">
+  <base target="_self">
 </head>
 <body class="rolam-page">
-  <header id="navbar">
-    <nav class="navbar">
-      <img src="media/mg_sign.webp" alt="MG_logo" style="height:40px; vertical-align: middle;">
-      <a href="index.html" target="_self">Kezdőlap</a>
-      <a href="informatika.html" target="_self">Informatika</a>
-      <a href="elektronika.html" target="_self">Elektronika</a>
-      <a href="gepeszet.html" target="_self">Gépészet</a>
-      <a href="rolam.html" target="_self">Rólam</a>
-    </nav>
-  </header>
+<header id="navbar">
+  <nav class="navbar">
+    <!-- Balra tart -->
+    <a href="index.html" class="logo-link">
+      <img src="media/mg_sign.webp" alt="MG logo" class="nav-logo">
+    </a>
+
+    <!-- Középre tart -->
+    <div class="nav-links">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </div>
+
+    <!-- Jobbra tart -->
+    <button class="hamburger" aria-label="Menü megnyitása">
+      <div class="hamburger-box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </nav>
+</header>
 
     <!-- SKILLS SECTION -->
     <section class="skills-section">
@@ -116,7 +134,30 @@
 </footer>
 
 <script>
-  
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Ha valamelyik elem hiányzik → hibát ír a konzolba
+    if (!hamburger || !navLinks) {
+      console.error("Hamburger vagy nav-links nem található az oldalon!");
+      return;
+    }
+
+    hamburger.addEventListener('click', function () {
+      // váltogatjuk az 'active' osztályt mindkettőn
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Ha mobilon rákattintunk egy linkre → automatikusan bezárjuk a menüt
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  });
 
 
 // Ablak megnyitása (id alapján)

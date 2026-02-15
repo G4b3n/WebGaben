@@ -3,22 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólió informatika oldala">
   <title>Informatika</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="media/mg_sign.webp" type="Sign-icon">
-  <base target="_blank">
+  <base target="_self">
 </head>
 <body class="info-page">
   <header id="navbar">
-    <nav class="navbar">
-      <img src="media/mg_sign.webp" alt="MG_logo" style="height:40px; vertical-align: middle;">
-      <a href="index.html" target="_self">Kezdőlap</a>
-      <a href="informatika.html" target="_self">Informatika</a>
-      <a href="elektronika.html" target="_self">Elektronika</a>
-      <a href="gepeszet.html" target="_self">Gépészet</a>
-      <a href="rolam.html" target="_self">Rólam</a>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <!-- Balra tart -->
+    <a href="index.html" class="logo-link">
+      <img src="media/mg_sign.webp" alt="MG logo" class="nav-logo">
+    </a>
+
+    <!-- Középre tart -->
+    <div class="nav-links">
+      <a href="index.html">Kezdőlap</a>
+      <a href="informatika.html">Informatika</a>
+      <a href="elektronika.html">Elektronika</a>
+      <a href="gepeszet.html">Gépészet</a>
+      <a href="rolam.html">Rólam</a>
+    </div>
+
+    <!-- Jobbra tart -->
+    <button class="hamburger" aria-label="Menü megnyitása">
+      <div class="hamburger-box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </nav>
+</header>
 
   <h1 style="text-align: center;">Egy pár projekt, ami főként az informatikához tartozik vagy túlnyomó részt az kell hozzá</h1>
 
@@ -122,12 +139,17 @@
         <a class="webserver" href="media/info/docker_webserver.webp" target="_blank">(kép erről)</a>
       </p>
       <p>
-        Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. <a href="media/info/parkszim_kliens.webp" target="_blank">(kép erről)</a> <br>
-        Elkészítettük a programot, ami a gép webserverét figyelte. <a href="media/info/parkszim_program.webp" target="_blank">(kép erről)</a> <br>
-        És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. <a href="media/info/parkszim_server.webp" target="_blank">(ízelítő)</a> <br>
-        A teljes programot le tudod tölteni <a href="media/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
+        Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. 
+        <a href="media/info/parkszim_kliens.webp" target="_blank">(kép erről)</a> <br>
+        Elkészítettük a programot, ami a gép webserverét figyelte. 
+        <a href="media/info/parkszim_program.webp" target="_blank">(kép erről)</a> <br>
+        És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. 
+        <a href="media/info/parkszim_server.webp" target="_blank">(ízelítő)</a> <br>
+        A teljes programot le tudod tölteni 
+        <a href="media/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
       </p>
-      <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni <a href="media/info/ParkolohazSzimulacio_eredmeny.webp" target="_blank">itt.</a>
+      <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni 
+        <a href="media/info/ParkolohazSzimulacio_eredmeny.webp" target="_blank">itt.</a>
       </p>
       <p>
         Ha letöltöd a programot és kipróbálod, akkor ezen az útvonalon <pre><code>ParkolohazSzimulacio\ParkolohazSzimulacio\bin\Debug\net8.0\Rendszámok</code></pre>
@@ -159,10 +181,14 @@
   <p style="padding: 1rem; margin-top: 0; margin-bottom: 0;">Gyakorlat alatt, illetve órákon is készítettünk számos egyéb weboldalt vagy html-es megjelenítést. Ezeket az oldalakat az alábbi linkeken lehet megnézni</p>
   <h3>Kezdetleges oldalak:</h3>
   <ul>
-    <li>Gyakorlatról fennmaradt oldal a CSS bemutatására. <a href="https://g4b3n.github.io/CSS_gyarkorlas/" target="_blank">CSS bemutató</a></li>
-    <li>Gyakorlat első "valahogy kinéző" oldala. <a href="https://g4b3n.github.io/Viragok/" target="_blank">Viragok</a></li>
-    <li>Ennek a weblapnak egy kezdetleges vázlata. <a href="https://g4b3n.github.io/Weboldal_csontvaz/" target="_blank">Webskeleton</a></li>
-    <li>Óra SQL feladat eredményei html-es megjelenítésben. <a href="https://g4b3n.github.io/szobrok/" target="_blank">SQL szobrok</a></li>
+    <li>Gyakorlatról fennmaradt oldal a CSS bemutatására. 
+      <a href="https://g4b3n.github.io/CSS_gyarkorlas/" target="_blank">CSS bemutató</a></li>
+    <li>Gyakorlat első "valahogy kinéző" oldala. 
+      <a href="https://g4b3n.github.io/Viragok/" target="_blank">Viragok</a></li>
+    <li>Ennek a weblapnak egy kezdetleges vázlata. 
+      <a href="https://g4b3n.github.io/Weboldal_csontvaz/" target="_blank">Webskeleton</a></li>
+    <li>Óra SQL feladat eredményei html-es megjelenítésben. 
+      <a href="https://g4b3n.github.io/szobrok/" target="_blank">SQL szobrok</a></li>
   </ul>
   <h3>Haladóbb oldalak:</h3>
   <p>Ezen oldalak órai feladat keretében lettek létrehozva ugyan nem általam, mert volt egy leírás, ami alapján kellett ezeket módosítani/kiegészíteni.</p>
@@ -226,7 +252,25 @@
 </footer>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      // Kattintás a linkre → bezárjuk a menüt (mobil)
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+  });
 
 // Ablak megnyitása (id alapján)
 function openModal(id) {
