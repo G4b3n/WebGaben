@@ -1,5 +1,4 @@
 /*============================= Minden oldalra vonatkozik ===========================*/
-/*============================= Minden oldalra vonatkozik ===========================*/
 *,
 *::before,
 *::after {
@@ -231,10 +230,6 @@ footer {
   text-decoration: none;
   transition: color 0.2s;
   white-space: nowrap;          
-}
-
-.footer-links a:hover {
-  color: white;
 }
 
 .footer-contact {
@@ -674,6 +669,10 @@ code {
 .modal-content ol {
   margin: 0.8rem 0 0.8rem 1.5rem;
   padding-left: 1rem;
+}
+
+.lista-link a, a:visited{
+color: white;
 }
 /*---------------INFORMATIKA STÍLUS---------------*/
 
