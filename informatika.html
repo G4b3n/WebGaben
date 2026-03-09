@@ -98,10 +98,10 @@
         <p>12-es nyári gyakorlatunk 2. hetét írjuk, ahol belecsöppentünk a webfejlesztés bugyraiba és bemelegítésként ezt a projektet kaptuk. A feladatunk pedig nem más, mint egy prezentáció készítése 100%-ban mesterséges inteligenciával. Nos a feladatot kis túlzással, de mintha le se tójtam volna a saját fejem után menve álltam neki ugyan MI-vel dolgozni, de a rossz ötlettel. <br> 
         Én úgy gondoltam, hogy jó alaposan utána nézek az összes MI-nek, amit az oktató felrakott segédletként és meglepődik, hogy mennyire szorgalmas vagyok, mert mindegyiket beleraktam a ppt-be. És itt jöttem rá, hogy a vállalati szemlélet nem mindig  jutalmazza a szorgalmat, mivel az oktatón kis híján csalódva nézte végig, hogy én mindegyiket beleraktam és nem 2ről csináltam egy szintén megadott ppt "generátorral". <br> 
         Ezt leszámítva annyira nem lett rossz, mert nem mondta, hogy csináljam újra vagy javítsak rajta, csak hogy töltsem fel classroomra és teamsre. <br>   
-        A prezentáció megtekinthető és letölthető <a class="AI-ppt" href="https://docs.google.com/presentation/d/1zABJHYmj_aodw6iS77xQuBDDxFAa6BE-/edit?usp=drive_link&ouid=115863600128145703976&rtpof=true&sd=true">innen</a> <br>
+        A prezentáció megtekinthető és letölthető <a class="AI-ppt" href="https://docs.google.com/presentation/d/1zABJHYmj_aodw6iS77xQuBDDxFAa6BE-/edit?usp=drive_link&ouid=115863600128145703976&rtpof=true&sd=true" target="_blank">innen</a> <br>
         Beágyazott .pptx-ként 
         <div class="ppt-container">
-          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1QD4nlwhdWw6BZNax87xbtEBklqvljgM3YS68equXePxEgSU-7Em7L_jwESUBkg/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1QD4nlwhdWw6BZNax87xbtEBklqvljgM3YS68equXePxEgSU-7Em7L_jwESUBkg/pubembed?start=true&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div> <br>
         Vagy akár videóként 
         <div class="video-container">
@@ -114,7 +114,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="origin" 
             allowfullscreen>
-          </iframe>
+          </iframe> <br>
+          Sajnos észrevehető különbség, hogy a videóban és a letölthető verzióban a felsorolásnál láthatjuk a listaelemek egyedi jelét, viszont a beépítettben nem. Ez egy beépített elem hiba és nem találtam megoldást erre.
         </div>
       </p>
     </div>
@@ -136,23 +137,25 @@
       <p>
         Ha a borítókép megrémített akkor nem vag egyedül, bár én amikor ezt láttam már-már inkább könnyeket ejtettem örömömben. Ezt a projektet a tanárúrral együtt készítettük, hisz a felét se tudtuk volna megcsinálni, de. mégis miért mondom ezt? <br>
         Ez egy több hetes projekt volt, mivel kettő fronton is "harcoltunk". Egyik oldal egy Debian alapú linuxos virtuális gép feltelepítése és konfigurálása az igényünkre, illetve maga a szimulációt végrehajtó program. Elsőnek a virtuális gépet raktuk össze, amire telepítettünk egy docker image-et is, hogy ezon keresztúl létrehozzunk és működtessünk egy webservert.
-        <a class="webserver" href="media/info/docker_webserver.webp" target="_blank">(kép erről)</a>
+        <a class="webserver" href="media/info/docker_webserver.webp" target="_blank">kép erről</a>
       </p>
       <p>
         Miután elkészült ez a dolog kicsit elhanyagoltuk a webserver részét és nekiálltunk a szimuláció program megírásának. Ehhez telepítettünk egy tetszőleges adatbázist a virtuális gépre (bár a mysql-en kívűl mást nem tudtunk életre kelteni). Összesen 3 fájlt készítettünk el egy klienst, melyben a rendszámokat "olvassuk" és küldjük el a gép saját belső webserverére. 
-        <a href="media/info/parkszim_kliens.webp" target="_blank">(kép erről)</a> <br>
+        <a href="media/info/parkszim_kliens.webp" target="_blank">kép erről</a> <br>
         Elkészítettük a programot, ami a gép webserverét figyelte. 
-        <a href="media/info/parkszim_program.webp" target="_blank">(kép erről)</a> <br>
+        <a href="media/info/parkszim_program.webp" target="_blank">kép erről</a> <br>
         És magát a servert, ami elvégezte a nehéz munkát. Köztük azt, hogy belépés és kilépés között mennyi idő telt el és abból kiszámolja, hogy mennyi a fizetendő. 
-        <a href="media/info/parkszim_server.webp" target="_blank">(ízelítő)</a> <br>
-        A teljes programot le tudod tölteni 
-        <a href="media/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
+        <a href="media/info/parkszim_server.webp" target="_blank">bemutató</a> 
+        <p>
+          A teljes programot le tudod tölteni 
+          <a href="media/ParkolohazSzimulacio_tomoritett.zip">ezen a linken.</a>
+        </p>
       </p>
       <p>Indítsd el és hagyd futni a programot egy 5-10 percig, mert addigra lesz jó pár rendszám a .txt fájlban és te is valami hasonlót fogsz látni 
         <a href="media/info/ParkolohazSzimulacio_eredmeny.webp" target="_blank">itt.</a>
       </p>
       <p>
-        Ha letöltöd a programot és kipróbálod, akkor ezen az útvonalon <pre><code>ParkolohazSzimulacio\ParkolohazSzimulacio\bin\Debug\net8.0\Rendszámok</code></pre>
+        Ha letöltöd a programot és kipróbálod, akkor ezen az útvonalon: <pre><code>ParkolohazSzimulacio\ParkolohazSzimulacio\bin\Debug\net8.0\Rendszámok</code></pre>
         jön létre egy parkolasok.txt szöveges fájl, amiben gyújtődnek az adatok és itt a 4. oszlop a fizetendő összeg lenne. Tekintettel arra, hogy a rendszámok alap esetben 5-10 másodpercenként jönnek a percdíjas számolás miatt nem túl drasztikus számokat kapunk eredményűl. Ezt tudjuk változtatni úgy, hogy a Program.cs fájlban átírjuk az intervallumot <pre><code>Thread.Sleep(vszg.Next(5000,10000));</code></pre> nagyobb számokra, de figyelni kell, mert ezek ezredmásodpercben vannak megadva.
       </p>
       <p>Egy másik módszer, hogy másodpercdíjat számoljunk:
@@ -178,7 +181,7 @@
 <!-- egyéb projekt -->
 <div style="padding: 3rem; font-size: large;">
   <div style="background-color: rgba(10, 26, 49); border-radius: 10px; padding: 5px;">
-  <p style="padding: 1rem; margin-top: 0; margin-bottom: 0;">Gyakorlat alatt, illetve órákon is készítettünk számos egyéb weboldalt vagy html-es megjelenítést. Ezeket az oldalakat az alábbi linkeken lehet megnézni</p>
+  <p style="padding: 1rem; margin-top: 0; margin-bottom: 0;">Gyakorlat alatt, illetve órákon is készítettünk számos weboldalt vagy html-es megjelenítést. Ezeket az oldalakat az alábbi linkeken lehet megnézni, illetve a github oldalom elérhetők amit az oldal alján érünk el.</p>
   <h3>Kezdetleges oldalak:</h3>
   <ul class="lista-link">
     <li>Gyakorlatról fennmaradt oldal a CSS bemutatására. 
@@ -191,7 +194,7 @@
       <a href="https://g4b3n.github.io/szobrok/" target="_blank">SQL szobrok</a></li>
   </ul>
   <h3>Haladóbb oldalak:</h3>
-  <p>Ezen oldalak órai feladat keretében lettek létrehozva ugyan nem általam, mert volt egy leírás, ami alapján kellett ezeket módosítani/kiegészíteni.</p>
+  <p>Ezek az oldalak órai feladat keretében lettek létrehozva ugyan nem általam, mert volt egy leírás, ami alapján kellett ezeket módosítani/kiegészíteni.</p>
   <ul class="lista-link">
     <li>Az IPv4-es címek fogyásának szemléltetése. 
       <a href="https://drive.google.com/file/d/1PfejHapYiih1vZ9rx14VDF22hBjiskjg/view?usp=sharing" target="_blank">feladatsor</a>, 
