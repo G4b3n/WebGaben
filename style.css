@@ -80,6 +80,7 @@ main{
 }
 
 .nav-links a {
+    color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.05rem;
@@ -365,6 +366,8 @@ footer {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(10, 26, 49, 0.85);
   border-radius: 12px;
   padding: 2rem;
@@ -421,6 +424,7 @@ footer {
 
 .card-btn {
   display: inline-block;
+  margin-top: auto;
   padding: 10px 25px;
   background: linear-gradient(135deg, #0f7fbf, #0a4a7a);
   color: #ffffff;
