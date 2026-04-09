@@ -139,7 +139,6 @@ main{
     text-align: center;
     padding: 1.2rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid rgba(161, 184, 190, 0.05);
 }
 
 /* 1. Felső csík (Alaphelyzetben fent) */
@@ -304,7 +303,7 @@ footer {
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   color: #ffffff;
   margin: 0 0 0.5rem 0;
@@ -312,13 +311,13 @@ footer {
 }
 
 .hero-subtitle {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: #ffffff;
   margin: 0 0 0.5rem 0;
 }
 
 .hero-description {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #ffffff;
   margin: 0 0 2rem 0;
   letter-spacing: 2px;
@@ -589,6 +588,8 @@ footer {
 }
 
 .ppt-container {
+  margin-left: 100px;
+  margin-right: 100px;
   position: relative;
   padding-bottom: 56.25%;   
   height: 0;
@@ -602,6 +603,10 @@ footer {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: none;
+}
+
+.video-container {
+  justify-self: center;
 }
 
 .modal {
@@ -761,6 +766,8 @@ color: white;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .feladatlap-kartya {
@@ -770,6 +777,8 @@ color: white;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .jegyzokonyv-kartya:hover {
@@ -817,6 +826,7 @@ color: white;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
+  margin-top: auto;
 }
 
 .megtekintés-btn:hover {
@@ -908,6 +918,13 @@ color: white;
 /*---------------ELEKTRONIKA STÍLUS---------------*/
 
 /*---------------GÉPÉSZET STÍLUS---------------*/
+.gépészet-page h1{
+  text-align: center;
+}
+
+.tartalom-doboz{
+  font-size: 24px;
+}
 .masonry-container {
   column-count: 3;                  
   column-gap: 1.5rem;               
